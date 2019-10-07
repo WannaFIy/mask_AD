@@ -119,8 +119,8 @@ def detect_and_ad_blur(model, image_path=None, video_path=None):
         splash = ad_blur(image, r['masks'])
         # Save output
         file_name = "ad_{:%Y%m%dT%H%M%S}.png".format(datetime.datetime.now())
-        cv2.imwrite('file_name',splash)
-        #skimage.io.imsave(file_name, splash)
+        print(type(splash))
+        skimage.io.imsave(file_name, splash)
     elif video_path:
         
         # Video capture
