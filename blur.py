@@ -1,7 +1,7 @@
 import os
 import sys
 import numpy as np
-
+from PIL import Image
 # Download and install the Python COCO tools from https://github.com/waleedka/coco
 # That's a fork from the original https://github.com/pdollar/coco with a bug
 # fix for Python 3.
@@ -120,7 +120,8 @@ def detect_and_ad_blur(model, image_path=None, video_path=None):
         # Save output
         file_name = "ad_{:%Y%m%dT%H%M%S}.jpg".format(datetime.datetime.now())
         print(type(splash))
-        cv2.imwrite(file_name,splash)
+        img = Image.fromarray(splash, 'RGB')
+        img.save(file_name)
         # skimage.io.imsave(file_name, splash)
     elif video_path:
         
