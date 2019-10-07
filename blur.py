@@ -33,8 +33,6 @@ import mrcnn.model as modellib
 from mrcnn import visualize
 from mrcnn.model import log
 
-%matplotlib inline 
-
 # model directory and path
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../../")
