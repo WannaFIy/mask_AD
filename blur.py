@@ -120,6 +120,7 @@ def detect_and_ad_blur(model, image_path=None, video_path=None):
         # Save output
         file_name = "ad_{:%Y%m%dT%H%M%S}.jpg".format(datetime.datetime.now())
         print(type(splash))
+        print(splash.shape)
         img = Image.fromarray(splash, 'RGB')
         img.save(file_name)
         # skimage.io.imsave(file_name, splash)
