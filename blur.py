@@ -165,15 +165,16 @@ if __name__ == '__main__':
     parser.add_argument('--model', required=True,
                         metavar="/path/to/weights.h5",
                         help="Path to weights .h5 file")
-    parser.add_argument('--image_path', required=True,
+    parser.add_argument('--image_path', required=False,
                         metavar="/path/to/image.jpg",
                         help="Path to image")
-    parser.add_argument('--video_path', required=True,
+    parser.add_argument('--video_path', required=False,
                         metavar="/path/to/video.mp4",
                         help="Path to video")
     
     args = parser.parse_args()
-
+    if not (args.image_path or args.video_path):
+        parser.error('No image or video path')
     # Configurations
     config = ADConfig()
 
