@@ -112,18 +112,15 @@ def detect_and_ad_blur(model, image_path=None, video_path=None):
         # Run model detection and generate the color splash effect
         
         # Read image
-        image = cv2.imread(image_path)
+        image = skimage.io.imread(image_path)
         # Detect objects
         r = model.detect([image], verbose=1)[0]
         # Color splash
         splash = ad_blur(image, r['masks'])
         # Save output
         file_name = "ad_{:%Y%m%dT%H%M%S}.jpg".format(datetime.datetime.now())
-        print(type(splash))
-        print(splash.shape)
-        img = Image.fromarray(splash, 'RGB')
-        img.save(file_name)
-        # skimage.io.imsave(file_name, splash)
+        
+        skimage.io.imsave(file_name, splash)
     elif video_path:
         
         # Video capture
