@@ -23,7 +23,7 @@ import re
 import cv2
 import matplotlib
 import matplotlib.pyplot as plt
-
+import tensorflow as tf
 # Root directory of the project
 # Import Mask RCNN
 # To find local version of the library
