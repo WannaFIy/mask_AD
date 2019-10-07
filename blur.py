@@ -1,7 +1,7 @@
 import os
 import sys
 import numpy as np
-from PIL import Image
+
 # Download and install the Python COCO tools from https://github.com/waleedka/coco
 # That's a fork from the original https://github.com/pdollar/coco with a bug
 # fix for Python 3.
