@@ -51,7 +51,7 @@ DEVICE = "/gpu:0"  # /cpu:0 or /gpu:0
 TEST_MODE = "inference"
 
 
-'''
+
 class ADConfig(Config):
     """Configuration for training on the toy shapes dataset.
     Derives from the base Config class and overrides values specific
@@ -66,7 +66,7 @@ class ADConfig(Config):
     IMAGES_PER_GPU = 1
 
     # Number of classes (including background)
-    NUM_CLASSES = 1 + 1  # background + 3 shapes
+    NUM_CLASSES = 1 + 1  # background + 1 
 
     # Use small images for faster training. Set the limits of the small side
     # the large side, and that determines the image shape.
@@ -77,75 +77,16 @@ class ADConfig(Config):
     # Use smaller anchors because our image and objects are small
     # Reduce training ROIs per image because the images are small and have
     # few objects. Aim to allow ROI sampling to pick 33% positive ROIs.
-    DETECTION_MIN_CONFIDENCE = 0  
+    DETECTION_MIN_CONFIDENCE = 0.9  
 
     # Use a small epoch since the data is simple
     STEPS_PER_EPOCH = 500
 
     # use small validation steps since the epoch is small
     VALIDATION_STEPS = 50
-    
- '''
 
-class ADConfig(Config):
-    """Configuration for training on the toy shapes dataset.
-    Derives from the base Config class and overrides values specific
-    to the toy shapes dataset.
-    """
-    # Give the configuration a recognizable name
-    NAME = "ad"
-    BACKBONE = "resnet101"
-    # Train on 1 GPU and 8 images per GPU. We can put multiple images on each
-    # GPU because the images are small. Batch size is 8 (GPUs * images/GPU).
-    GPU_COUNT = 1
-    IMAGES_PER_GPU = 1
 
-    # Number of classes (including background)
-    NUM_CLASSES = 1 + 1  # background + 3 shapes
-    
-    # Use small images for faster training. Set the limits of the small side
-    # the large side, and that determines the image shape.
-    IMAGE_RESIZE_MODE = "square"
-    IMAGE_MIN_DIM = 1024
-    IMAGE_MAX_DIM = 1024
 
-    DETECTION_MIN_CONFIDENCE = 0
-    
-    RPN_ANCHOR_RATIOS = [0.5, 1, 2]
-    RPN_NMS_THRESHOLD = 0.9
-    RPN_TRAIN_ANCHORS_PER_IMAGE = 200
-    TRAIN_ROIS_PER_IMAGE = 300
-    MAX_GT_INSTANCES = 200
-    DETECTION_MAX_INSTANCES = 400
-    TRAIN_ROIS_PER_IMAGE = 400
-
-    # Maximum number of ground truth instances to use in one image
-    MAX_GT_INSTANCES = 200
-
-    # Max number of final detections per image
-    DETECTION_MAX_INSTANCES = 400
-    # ROIs kept after non-maximum supression (training and inference)
-    POST_NMS_ROIS_TRAINING = 1000
-    POST_NMS_ROIS_INFERENCE = 2000
-
-    # Non-max suppression threshold to filter RPN proposals.
-    # You can increase this during training to generate more propsals.
-    RPN_NMS_THRESHOLD = 0.9
-
-    # How many anchors per image to use for RPN training
-    RPN_TRAIN_ANCHORS_PER_IMAGE = 200
-    # Use smaller anchors because our image and objects are small
-      # anchor side in pixels
-
-    # Reduce training ROIs per image because the images are small and have
-    # few objects. Aim to allow ROI sampling to pick 33% positive ROIs.
-    
-
-    # Use a small epoch since the data is simple
-    STEPS_PER_EPOCH = 1000
-
-    # use small validation steps since the epoch is small
-    VALIDATION_STEPS = 100
     
 import datetime
 def ad_blur(image, mask):
