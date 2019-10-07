@@ -77,7 +77,7 @@ class ADConfig(Config):
     # Use smaller anchors because our image and objects are small
     # Reduce training ROIs per image because the images are small and have
     # few objects. Aim to allow ROI sampling to pick 33% positive ROIs.
-    DETECTION_MIN_CONFIDENCE = 0.9  
+    DETECTION_MIN_CONFIDENCE = 0 
 
     # Use a small epoch since the data is simple
     STEPS_PER_EPOCH = 500
