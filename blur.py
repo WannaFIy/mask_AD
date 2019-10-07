@@ -19,7 +19,7 @@ import shutil
 import random
 import math
 import re
-
+import skimage
 import cv2
 import matplotlib
 import matplotlib.pyplot as plt
