@@ -2,10 +2,14 @@
 This is MaskRCNN model trained in blurring advertising on the streets. Fork from https://github.com/matterport/Mask_RCNN.git
 
 # Examples
-![Examples] <p align="center">
-              <img src="samples/ad_20191007T150755.jpg" width="350" title="hover text">
-              <img src="samples/ad_20191007T150856.jpg" width="350" alt="accessibility text">
-            </p>
+<p align="center">
+  <img src="samples/ad_20191007T150755.jpg" width="350" title="hover text">
+  <img src="samples/ad_20191007T150856.jpg" width="350" alt="accessibility text">
+  <img src="samples/ad_20191007T153252.jpg" width="350" alt="accessibility text">
+  <img src="samples/ad_20191007T153320.jpg" width="350" alt="accessibility text">
+  <img src="samples/ad_20191007T153349 (1).jpg" width="350" alt="accessibility text">
+  <img src="samples/ad_20191007T153650.jpg" width="350" alt="accessibility text">
+</p>
 
 
 The repository includes:
