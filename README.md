@@ -2,7 +2,7 @@
 This is MaskRCNN model trained in blurring advertising on the streets. Fork from https://github.com/matterport/Mask_RCNN.git
 
 # Examples
-![Examples](assets/street.png)
+![Examples](samples/ad_20191007T150755.jpg)
 
 The repository includes:
 * Source code of Mask R-CNN built on FPN and ResNet101.
