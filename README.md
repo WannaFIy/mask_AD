@@ -12,8 +12,7 @@ This is MaskRCNN model trained in blurring advertising on the streets. Fork from
 </p>
 
 # Getting Started
-* [blur.py](blur.py) Is the easiest way to start. It shows an example of using a model pre-trained on MS COCO to segment objects in your own images.
-It includes code to run object detection and instance segmentation on arbitrary images or video.
+* [blur.py](blur.py) Using a model pre-trained on custom dataset to segment and blur objects in your own images or video.
 
 
 # Step by Step Detection
