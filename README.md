@@ -13,7 +13,12 @@ This is MaskRCNN model trained in blurring advertising on the streets. Fork from
 
 # Getting Started
 * [blur.py](blur.py) Using a model pre-trained on custom dataset to segment and blur objects in your own images or video.
+```
+# Train a new model starting from pre-trained COCO weights
+python3 blur.py (--image_path=/path/to/image.jpg | --video_path=/path/to/video.mp4) --model=/path/to/weigth.h5 
 
+
+```
 * You can download [dataset annotation](https://github.com/WannaFIy/mask_AD/releases) to train your own model, the dataset consists of photos from Google street view. [dataset](http://www.cs.ucf.edu/~aroshan/index_files/Dataset_PitOrlManh/zipped%20images/part1.zip)
 
 ## Citation
