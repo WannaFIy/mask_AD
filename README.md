@@ -20,18 +20,6 @@ python3 blur.py (--image_path=/path/to/image.jpg | --video_path=/path/to/video.m
 ```
 * You can download [dataset annotation](https://github.com/WannaFIy/mask_AD/releases) to train your own model, the dataset consists of photos from Google street view. [dataset](http://www.cs.ucf.edu/~aroshan/index_files/Dataset_PitOrlManh/zipped%20images/part1.zip)
 
-## Citation
-Use this bibtex to cite this repository:
-```
-@misc{wannafli_maskrcnn_ad_2019,
-  title={Mask R-CNN for detecting and blurring advertising on streets},
-  author={Wanna Fly},
-  year={2019},
-  publisher={Github},
-  journal={GitHub repository},
-  howpublished={\url{https://github.com/WannaFIy/mask_AD}},
-}
-```
 
 ## Requirements
 Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in `requirements.txt`.
