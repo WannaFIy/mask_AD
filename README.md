@@ -10,7 +10,7 @@ This is MaskRCNN model trained for blurring advertising on the streets. Fork fro
   <img src="samples/ad_20191007T153349 (1).jpg" width="350" alt="accessibility text">
   <img src="samples/ad_20191007T153650.jpg" width="350" alt="accessibility text">
 </p>
-
+Video (https://studio.youtube.com/video/xQUpQzeStmQ/edit)
 # Getting Started
 * [blur.py](blur.py) Using a model pre-trained on custom dataset to segment and blur objects in your own images or video.
 ```
