@@ -9,7 +9,11 @@ This is MaskRCNN model trained for blurring advertising on the streets. Fork fro
   <img src="samples/ad_20191007T153320.jpg" width="350" alt="accessibility text">
   <img src="samples/ad_20191007T153349 (1).jpg" width="350" alt="accessibility text">
   <img src="samples/ad_20191007T153650.jpg" width="350" alt="accessibility text">
-  [![Watch the video](https://www.youtube.com/watch?v=A48AJ_5nWsc)](https://www.youtube.com/watch?v=A48AJ_5nWsc)
+  
+</p>
+<p align="center">
+  [![Video](https://gifs.com/gif/blur-advertisement-on-streets-jZ67py)](https://www.youtube.com/watch?v=xQUpQzeStmQ)
+  
 </p>
 
 
