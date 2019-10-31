@@ -1,5 +1,5 @@
 
-This is MaskRCNN model trained for blurring advertising on the streets. Fork from https://github.com/matterport/Mask_RCNN.git
+This is MaskRCNN model trained for blurring advertising on the streets. From https://github.com/matterport/Mask_RCNN.git
 
 # Examples
 <p align="center">
